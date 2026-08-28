@@ -1,5 +1,6 @@
-import ResumeViewer from "../../components/ResumeViewer";
+
 import PageLayout from "../../components/PageLayout";
+import ResumeClient from "../../components/ResumeClient";
 import { Download } from "lucide-react";
 
 export default function Resume() {
@@ -11,7 +12,7 @@ export default function Resume() {
 
 
                     <div className="w-full max-w-[750px]">
-                        <ResumeViewer />
+                        <ResumeClient />
                     </div>
                     <a
                         href="/documents/resume.pdf"
