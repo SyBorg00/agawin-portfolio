@@ -23,7 +23,7 @@ const achived_projects = [
     },
     {
         title: 'Pomelo Disease Detection System',
-        image: '/images/pomelo_1.png',
+        image: '/images/pomelo-1.png',
         description: 'An android applcation to detect pomelo-related diseases. Built in collaboration. Uses React Native as the frontend, Python as the backend, and Expo as the deployment tool.',
         tags: ['React Native', 'Expo', "Python", 'Android'],
         links: ["https://github.com/SyBorg00/pacita_boarding_rental_app.git"]
