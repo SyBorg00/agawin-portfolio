@@ -12,7 +12,7 @@ export default function Home() {
             <div>
               <Typewriter />
               <h1>I build useful digital experiences that <span>look good</span> and work well.</h1>
-              <p className="intro">I'm a software developer focused on modern web applications, APIs, databases, and clean user experiences.</p>
+              <p className="intro">I'm a software developer focused on modern applications, APIs, databases, and clean user experiences.</p>
               <p className="intro">I also work on mobile applications as well</p>
               <div className="actions">
                 <Link className="button primary" href="/pages/projects">View my work</Link>
