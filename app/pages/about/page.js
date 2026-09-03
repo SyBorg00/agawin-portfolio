@@ -89,10 +89,10 @@ export default function About() {
                             </p>
                             <br />
                             <p>I enjoy taking an idea from
-                                <span className="about-span">database design</span> - analyzing the overall data structure of the app, to
+                                <span className="about-span"> database design</span> - analyzing the overall data structure of the app, to
                                 <span className="about-span"> API development</span> ,
                                 and all the way to a
-                                <span className="about-span">polished frontend.</span>
+                                <span className="about-span"> polished frontend. </span>
                                 I care about maintainable code, practical architecture, and interfaces that are easy to understand.</p>
                             <br />
 
