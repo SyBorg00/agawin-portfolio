@@ -202,6 +202,17 @@ a {
     font-size: 18px
 }
 
+.contact-icon {
+    font-size: 16px;
+    margin-right: 10px;
+    transition: .2s
+}
+
+.contact-icon:hover {
+    transform: translateY(-2px);
+    color: #57a5ff
+}
+
 .email {
     display: inline-block;
     font-family: 'Space Grotesk';

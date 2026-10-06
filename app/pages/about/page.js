@@ -148,29 +148,29 @@ export default function About() {
 
                     <div className="flex flex-col items-center justify-center gap-4">
                         <p className="eyebrow text-3xl" >GET IN TOUCH</p>
-                        <h1>Feel free to contact me</h1>
+                        <h1>Feel free to contact me through the following links</h1>
 
                         <div className="flex flex-row gap-10">
-                            <div>
+                            <div className="contact-icon">
                                 <a href="mailto:agawinsylvannjules@gmail.com" target="_blank" rel="noopener noreferrer">
                                     <SiGmail size={50} />
                                 </a>
 
                             </div>
-                            <div>
+                            <div className="contact-icon">
                                 <a href="https://linkedin.com/in/sylvann-jules-agawin-831195419" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedin size={50} />
                                 </a>
 
                             </div>
-                            <div>
+                            <div className="contact-icon">
                                 <a href="https://github.com/SyBorg00" target="_blank" rel="noopener noreferrer">
                                     <FaGithub size={50} />
                                 </a>
 
                             </div>
 
-                            <div>
+                            <div className="contact-icon">
                                 <a href="https://www.facebook.com/sylvannjules.agawin" target="_blank" rel="noopener noreferrer">
                                     <FaFacebook size={50} />
                                 </a>
