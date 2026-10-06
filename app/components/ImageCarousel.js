@@ -29,7 +29,10 @@ export default function ImageCarousel() {
                     src={image}
                     alt={`Portfolio image ${index + 1}`}
                     fill
-                    className={`object-cover transition-opacity duration-1000 ${index === currentImage ? "opacity-100" : "opacity-0"
+                    sizes="(max-width: 600px) 100vw, 600px"
+                    className={`object-cover transition-opacity duration-1000 ${index === currentImage
+                            ? "opacity-100"
+                            : "opacity-0"
                         }`}
                 />
             ))}
