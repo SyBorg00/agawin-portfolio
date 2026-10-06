@@ -6,9 +6,17 @@ import Link from 'next/link';
 
 const upcoming_projects = [
     {
-        title: 'Booking & Appointment System',
-        description: 'A full-stack booking platform with service management, staff scheduling, appointments, and a Laravel API.',
-        tags: ['Laravel', 'MySQL', 'React'],
+        title: 'Booking & Appointment System Backend with Laravel API',
+        image: '/images/preview.png',
+        description: 'The backend of a booking platform with service management, staff scheduling, appointments, and more. Built with Laravel and MySQL, providing a robust API for flexible integration with various frontend frameworks.',
+        tags: ['Laravel', 'MySQL', 'API'],
+        links: ["https://github.com/SyBorg00/booking_system_backend.git"]
+    },
+    {
+        title: 'Booking & Appointment System Frontend with React + TailwindCSS + Typescript',
+        image: '/images/preview.png',
+        description: 'The first frontend of a booking platform with service management, staff scheduling, appointments, and more. Built with React, TailwindCSS, and Typescript, providing a responsive and user-friendly interface for seamless user experience.',
+        tags: ['React', 'TailwindCSS', 'Typescript'],
         links: ["https://github.com/SyBorg00/booking_system_backend.git"]
     },
 ];
@@ -40,21 +48,45 @@ const achived_projects = [
 export default function Projects() {
     return (
         <PageLayout>
-            {/*Ongoing */}
+
             <main className="section muted bg-cover bg-center" style={{ backgroundImage: "url('/images/project-bg.png')" }}>
+
+                {/*Ongoing */}
                 <section className='section container'>
                     <div className="sectionhead">
                         <p className="eyebrow">UPCOMING</p>
                         <h1>A snippet of what I am currently working with</h1>
                     </div>
+
                     <div className="grid">
                         {upcoming_projects.map((project, index) => (
                             <article className="card" key={project.title}>
                                 <div className="cardtop"><span className="number">{String(index + 1).padStart(2, '0')}</span><span>↗</span></div>
+
+                                {/* Project thumbnail */}
+                                <div className='relative overflow-hidden'>
+                                    <Image
+                                        src={project.image}
+                                        alt={project.title}
+                                        width={600}
+                                        height={200}
+                                        className="h-64 w-full object-cover"
+                                    />
+                                    <div className='absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent'></div>
+                                </div>
+
+                                {/* Project title */}
                                 <h3>{project.title}</h3>
-                                <p>{project.description}</p>
+
+                                {/* Project description */}
+                                <p className="project-scrollbar h-32 overflow-y-auto text-gray-600">
+                                    {project.description}
+                                </p>
+
+                                {/* Project tags */}
                                 <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
 
+                                {/* Project redirection */}
                                 <div className="button primary flex flex-row items-center justify-center gap-2">
                                     {project.links.map(link => (
                                         <div
@@ -84,6 +116,7 @@ export default function Projects() {
                             <article className="card" key={project.title}>
                                 <div className="cardtop"><span className="number">{String(index + 1).padStart(2, '0')}</span><span>↗</span></div>
 
+                                {/* Project thumbnail */}
                                 <div className='relative overflow-hidden'>
                                     <Image
                                         src={project.image}
@@ -92,13 +125,21 @@ export default function Projects() {
                                         height={200}
                                         className="h-64 w-full object-cover"
                                     />
-                                    <div className='absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent'></div>
+                                    <div className='absolute inset-0 bg-gradient-to-t from-black/100 via-black/20 to-transparent'></div>
                                 </div>
 
+                                {/* Project title */}
                                 <h3>{project.title}</h3>
-                                <p>{project.description}</p>
+
+                                {/* Project description */}
+                                <p className="project-scrollbar h-32 overflow-y-auto text-gray-600">
+                                    {project.description}
+                                </p>
+
+                                {/* Project tags */}
                                 <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
 
+                                {/* Project redirection */}
                                 <div className="button primary flex flex-row items-center justify-center gap-2">
                                     {project.links.map(link => (
                                         <div
