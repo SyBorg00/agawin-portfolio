@@ -133,41 +133,6 @@ a {
     gap: 16px
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
-}
-
-.stack-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
-
-
-
-.about-card {
-    width: 100px;
-    height: 80px;
-    margin-right: 7px;
-    border: 1px solid #262628;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .2s
-}
-
-.about-span {
-    color: #57a5ff
-}
-
-.about-card:hover {
-    transform: translateY(-4px);
-    border-color: #5784ff
-}
-
 .card {
     border: 1px solid #262628;
     background-color: #0b0b0c;
@@ -207,29 +172,21 @@ a {
     line-height: 1.7
 }
 
-.tags {
-    margin-top: auto;
-    display: flex;
-    gap: 7px;
-    flex-wrap: wrap
-}
-
-.tags span {
-    font-size: 12px;
-    padding: 7px 10px;
-    background: #171719;
-    border-radius: 999px;
-    color: #bbb
-}
-
-.muted {
-    background: #111113
-}
-
+/*
+|-----------------------------------
+| ABOUT SECTION 
+|-----------------------------------
+*/
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
 }
 
 .about p {
@@ -254,6 +211,82 @@ a {
     border-bottom: 1px solid #3748da
 }
 
+.about-card {
+    width: 100px;
+    height: 80px;
+    margin-right: 7px;
+    border: 1px solid #262628;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s
+}
+
+.about-span {
+    color: #57a5ff
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    border-color: #5784ff
+}
+
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+/*
+|-----------------------------------
+| PROJECT SECTION 
+|-----------------------------------
+*/
+
+/*Scrollbar*/
+.project-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.project-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-scrollbar::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 9999px;
+}
+
+.project-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+.project-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #9ca3af transparent;
+}
+
+/*Project tags*/
+.tags {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap
+}
+
+.tags span {
+    font-size: 12px;
+    padding: 7px 10px;
+    background: #171719;
+    border-radius: 999px;
+    color: #bbb
+}
+
+.muted {
+    background: #111113
+}
 
 .footer {
     border-top: 1px solid #252527;
@@ -264,6 +297,8 @@ a {
     font-size: 12px
 }
 
+
+/*Media Flexibility*/
 @media(max-width:760px) {
     .navlinks {
         gap: 14px
